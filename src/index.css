@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* 全局基础样式：深色主题（背景 #0a0a0a，文字 #ffffff），配合 AGENT.md 设计要求 */
+@theme {
+  --color-dark-bg: #0a0a0a;
+  --color-dark-text: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-dark-bg);
+  color: var(--color-dark-text);
+  font-family: system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
